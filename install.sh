@@ -11,8 +11,8 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-INSTALL_DIR="$HOME/.compound-engineering"
-REPO_URL="https://github.com/cardinalpointstudio/compound-engineering.git"
+INSTALL_DIR="$HOME/.ce-orchestrator"
+REPO_URL="https://github.com/cardinalpointstudio/CEOrchestrator.git"
 
 echo -e "${BLUE}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BLUE}║      Compound Engineering Installer                  ║${NC}"
@@ -73,7 +73,7 @@ elif [ -n "$BASH_VERSION" ] || [ -f "$HOME/.bashrc" ]; then
 fi
 
 if [ -n "$SHELL_RC" ]; then
-    if ! grep -q "compound-engineering" "$SHELL_RC" 2>/dev/null; then
+    if ! grep -q "ce-orchestrator" "$SHELL_RC" 2>/dev/null; then
         echo "" >> "$SHELL_RC"
         echo "# Compound Engineering" >> "$SHELL_RC"
         echo "export PATH=\"\$PATH:$INSTALL_DIR\"" >> "$SHELL_RC"

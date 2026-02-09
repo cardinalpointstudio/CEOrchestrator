@@ -54,15 +54,15 @@ Plan → Implement (parallel) → Review → Refine → Compound → PR
 ### Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/compound-engineering/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/cardinalpointstudio/CEOrchestrator/main/install.sh | bash
 ```
 
 ### Manual Install
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/compound-engineering.git
-cd compound-engineering
+git clone https://github.com/cardinalpointstudio/CEOrchestrator.git
+cd CEOrchestrator
 
 # Make scripts executable
 chmod +x orchestrate.ts compound-start.sh
