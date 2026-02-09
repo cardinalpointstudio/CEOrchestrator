@@ -1,0 +1,16 @@
+# Workflow directory (created in project, not repo)
+.workflow/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log
