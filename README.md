@@ -6,7 +6,7 @@ Compound Engineering inverts traditional development (80% coding, 20% planning) 
 
 ## What It Does
 
-Spins up a tmux session with 6 specialized Claude Code instances working in parallel:
+Spins up a tmux session with 7 specialized Claude Code instances working in parallel:
 
 | Window | Role | Responsibility |
 |--------|------|----------------|
@@ -16,6 +16,7 @@ Spins up a tmux session with 6 specialized Claude Code instances working in para
 | 4 | **Frontend** | Implements React components, hooks, UI |
 | 5 | **Tests** | Writes unit, integration, and E2E tests |
 | 6 | **Reviewer** | Reviews all changes, runs tests, validates |
+| 7 | **Status** | Live workflow status display |
 
 ## The Workflow
 
@@ -114,10 +115,21 @@ Ctrl+b 3  → Backend window
 Ctrl+b 4  → Frontend window
 Ctrl+b 5  → Tests window
 Ctrl+b 6  → Review window
+Ctrl+b 7  → Status window (live display)
 Ctrl+b d  → Detach (session keeps running)
 ```
 
 Re-attach: `tmux attach -t ce-dev`
+
+### Stopping the Session
+
+```bash
+# Gracefully stop all windows
+./ce-stop.sh
+
+# Or force kill
+tmux kill-session -t ce-dev
+```
 
 ## Workflow Directory Structure
 
