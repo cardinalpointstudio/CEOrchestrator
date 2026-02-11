@@ -1,4 +1,4 @@
-# Compound Engineering Orchestrator
+# Compound Engineering Orchestrator (Claude-based)
 
 **Parallel Claude Code workflow orchestrator for building features faster with multiple AI agents.**
 
